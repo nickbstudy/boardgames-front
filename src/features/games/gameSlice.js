@@ -123,7 +123,7 @@ export const gameSlice = createSlice({
                 return obj._id !== action.payload.id
             })
         })
-        .addCase(deleteHerb.rejected, (state, action) => {
+        .addCase(deleteGame.rejected, (state, action) => {
             state.isLoading = false;
             state.isError = true;
             state.message = action.payload;
@@ -131,4 +131,5 @@ export const gameSlice = createSlice({
     }
 })
 
+export const { reset } = gameSlice.actions;
 export default gameSlice.reducer

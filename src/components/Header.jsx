@@ -23,16 +23,16 @@ function Header() {
     <>
         <header className="header">
             <div className="headerActions" style={{whiteSpace: 'nowrap', display: 'flex', flexGrow: '1', width: '600px'}}>
-                <span className="logo">Herb<br/>Tracker</span>
+                <span className="logo">Game Suggester</span>
                     
                     
             </div>
             <ul>
                 {user ? (
                     <li style={{display: 'flex'}}> 
-                        <span style={{marginRight: '12px', fontSize: '1.3em'}}>{user.name}</span>
-                    <button className="btn" onClick={onLogout} style={{transform: 'translate(0px, -3px)'}}>
-                        <FaSignOutAlt />　Logout
+                        <span style={{marginRight: '10px', fontSize: '1.3em', transform: 'translate(0px, 3px)'}}>{user.name}</span>
+                    <button className="btn" onClick={onLogout} >
+                        <FaSignOutAlt /> <span className="logout-words">Logout</span>
                     </button>
                 </li>
                 ) : 

@@ -25,7 +25,7 @@ const addGame = async (gameData, token) => {
 }
 
 // Change game
-const changeGame = async (gameData) => {
+const changeGame = async (gameData, token) => {
     const config = {
         headers: {
             Authorization: `Bearer ${token}`
@@ -36,7 +36,7 @@ const changeGame = async (gameData) => {
 }
 
 // Delete game
-const deleteGame = async (gameData) => {
+const deleteGame = async (gameData, token) => {
     const config = {
         headers: {
             Authorization: `Bearer ${token}`

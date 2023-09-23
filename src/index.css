@@ -1,5 +1,6 @@
 body {
-  background-color: #000;
+  background: url("../public/assets/background.jpg") no-repeat;
+  background-size: 100vw 100vh;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -13,7 +14,114 @@ code {
     monospace;
 }
 
+.heading {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #000;
+}
 
+.heading p {
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.formGroup {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formGroup input {
+  width: 400px;
+  font-size: 1.2em;
+  padding: 10px;
+  border: 1px solid #8c8c8c;
+  border-radius: 5px;
+  
+}
+
+.logo {
+  font-size: 1.6em;
+  line-height: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.header a {
+  text-decoration: none;
+  color: #000;
+}
+.header {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  max-width: 800px;
+  height: 50px;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0px;
+  /* border-bottom: 3px solid #555555; */
+  margin-bottom: 20px;
+}
+.headerActions {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.btn {
+  padding: 8px 16px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logout-words {
+  margin-left: 6px;
+}
+.btn-reg {
+  width: 400px;
+  font-size: 1.5em;
+  padding: 5px;
+  background-color: #000;
+  color: white;
+  border-radius: 5;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding-right: 10px;
+  margin: 0px;
+}
+
+.header ul li {
+  margin-left: 20px;
+}
+
+.header ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.header ul li a:hover {
+  color: #545454;
+}
+
+.header ul li a svg {
+  margin-right: 5px;
+}
 
 .loadingSpinnerContainer {
   position: fixed;
@@ -35,6 +143,17 @@ code {
   border-color: #000 transparent #555 transparent;
   border-radius: 50%;
   animation: spin 1.2s linear infinite;
+}
+
+table {
+  margin: 0px auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 5px;
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(200, 200, 200, 0.85);;
 }
 
 @keyframes spin {
